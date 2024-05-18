@@ -12,8 +12,11 @@ struct ContentView: View {
     @State var model = FoodModel()
 
     var body: some View {
-        List(model.foods, id: \.foodKey) { food in
-            Text(food.name)
+        NavigationView {
+            List(model.foods, id: \.foodKey) { food in
+                Text(food.name)
+            }
+            .searchable(text: $model.searchText)
         }
     }
 }

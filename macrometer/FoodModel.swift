@@ -13,19 +13,32 @@ struct Food: Codable, FetchableRecord, PersistableRecord, TableRecord {
     var carbohydrate: Double
     var sugars: Double
     var sodium: Int
+
 }
 
 @Observable
 final class FoodModel {
 
-    var foods: [Food]
+    var foods: [Food] {
+        allFoods.filter { food in
+            guard searchText.isEmpty == false else {
+                return true
+            }
+
+            return food.name.contains(searchText)
+        }
+    }
+
+    var searchText = ""
+
+    private var allFoods: [Food]
 
     init() {
         let path = Bundle.main.path(forResource: "food", ofType: "db")!
 
         let dbQueue = try! DatabaseQueue(path: path)
 
-        self.foods = try! dbQueue.read { db in
+        allFoods = try! dbQueue.read { db in
     		try! Food.fetchAll(db)
         }
     }
