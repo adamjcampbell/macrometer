@@ -31,6 +31,8 @@ final class FoodModel {
 
     var searchText = ""
 
+    var addedFoods: [Food] = []
+
     private var allFoods: [Food]
 
     init() {
