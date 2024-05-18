@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		668E43A12BF82367000DBC1D /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 668E43A02BF82367000DBC1D /* GRDB */; };
 		668E43A42BF87CD0000DBC1D /* food.db in Resources */ = {isa = PBXBuildFile; fileRef = 668E43A22BF87CD0000DBC1D /* food.db */; };
+		668E43A62BF87D1C000DBC1D /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E43A52BF87D1C000DBC1D /* FoodModel.swift */; };
 		66D148D72BF81A1F0069B540 /* macrometerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D148D62BF81A1F0069B540 /* macrometerApp.swift */; };
 		66D148D92BF81A1F0069B540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D148D82BF81A1F0069B540 /* ContentView.swift */; };
 		66D148DB2BF81A200069B540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D148DA2BF81A200069B540 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		668E43A22BF87CD0000DBC1D /* food.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = food.db; sourceTree = "<group>"; };
+		668E43A52BF87D1C000DBC1D /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		66D148D32BF81A1F0069B540 /* macrometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macrometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D148D62BF81A1F0069B540 /* macrometerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macrometerApp.swift; sourceTree = "<group>"; };
 		66D148D82BF81A1F0069B540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				66D148D62BF81A1F0069B540 /* macrometerApp.swift */,
 				66D148D82BF81A1F0069B540 /* ContentView.swift */,
+				668E43A52BF87D1C000DBC1D /* FoodModel.swift */,
 				66D148DA2BF81A200069B540 /* Assets.xcassets */,
 				66D148DC2BF81A200069B540 /* Preview Content */,
 				668E43A32BF87CD0000DBC1D /* Resources */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668E43A62BF87D1C000DBC1D /* FoodModel.swift in Sources */,
 				66D148D92BF81A1F0069B540 /* ContentView.swift in Sources */,
 				66D148D72BF81A1F0069B540 /* macrometerApp.swift in Sources */,
 			);

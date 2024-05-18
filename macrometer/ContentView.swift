@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var model = FoodModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(model.foods, id: \.foodKey) { food in
+            Text(food.name)
         }
-        .padding()
     }
 }
 
